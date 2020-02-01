@@ -59,7 +59,7 @@ function endGame(draw) {
     winningMessage.classList.add('show')
 }
 
-function idDraw() {
+function isDraw() {
     return [...cellElem].every(cell => {
         return cell.classList.contains(x_class) || cell.classList.contains(o_class)
     })
